@@ -23,21 +23,21 @@ public class DefaultToastView extends View {
 
 
     public DefaultToastView(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public DefaultToastView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public DefaultToastView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        initPaint();
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        initPaint();
         mWidth = getMeasuredWidth();
         mPadding = dip2px(5);
     }
