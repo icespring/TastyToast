@@ -29,23 +29,23 @@ public class InfoToastView extends View {
     private boolean isEyeMiddle = false;
 
     public InfoToastView(Context context) {
-        super(context);
+        this(context, null);
     }
 
 
     public InfoToastView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public InfoToastView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        initPaint();
+        initRect();
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        initPaint();
-        initRect();
         mWidth = getMeasuredWidth();
         mPadding = dip2px(10);
         mEyeWidth = dip2px(3);
@@ -95,6 +95,7 @@ public class InfoToastView extends View {
         stopAnim();
 
         startViewAnim(0f, 1f, 2000);
+
     }
 
     public void stopAnim() {

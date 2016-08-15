@@ -1,5 +1,10 @@
 package com.sdsmdg.tastytoast;
 
+import com.facebook.rebound.SimpleSpringListener;
+import com.facebook.rebound.Spring;
+import com.facebook.rebound.SpringConfig;
+import com.facebook.rebound.SpringSystem;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -7,16 +12,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.rebound.SimpleSpringListener;
-import com.facebook.rebound.Spring;
-import com.facebook.rebound.SpringConfig;
-import com.facebook.rebound.SpringSystem;
-
 /**
  * Created by rahul on 28/7/16.
  */
 public class TastyToast {
-    public static final int LENGTH_SHORT = 0;
     public static final int LENGTH_LONG = 1;
 
 
