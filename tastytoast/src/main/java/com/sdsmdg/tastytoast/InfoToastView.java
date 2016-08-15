@@ -99,6 +99,8 @@ public class InfoToastView extends View {
     }
 
     public void stopAnim() {
+
+        // 我又修改了一些东西
         if (valueAnimator != null) {
             clearAnimation();
             isEyeLeft = false;
