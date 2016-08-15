@@ -38,7 +38,7 @@ public class TastyToast {
 
         switch (type) {
             case 1: {
-                // 我也在这里提交了代码
+                // 我在这里提交了一些代码
                 View layout = LayoutInflater.from(context).inflate(R.layout.success_toast_layout, null, false);
                 TextView text = (TextView) layout.findViewById(R.id.toastMessage);
                 text.setText(msg);
