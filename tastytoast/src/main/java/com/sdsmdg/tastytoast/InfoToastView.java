@@ -93,6 +93,7 @@ public class InfoToastView extends View {
 
     public void startAnim() {
         stopAnim();
+
         startViewAnim(0f, 1f, 2000);
     }
 
@@ -105,6 +106,7 @@ public class InfoToastView extends View {
             endPoint = mPadding;
             mAnimatedValue = 0f;
             valueAnimator.end();
+
         }
     }
 
